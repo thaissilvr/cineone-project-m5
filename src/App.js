@@ -8,15 +8,16 @@ class App extends React.Component {
   render() {
   return (
     <div> 
-    <BrowserRouter>
-    <Header/>
-    <Routes>
-      <Route path="/" element={<h1>Página Inicial</h1>}/>
-      <Route path="/programacao" element={<Movies/>}/>           
-    </Routes>
-    </BrowserRouter>
-
-  </div>
+        <BrowserRouter>
+            <Header/>
+            <Routes>
+                <Route path="/" element={<h1>Página Inicial</h1>}/>
+                <Route path="/programacao" element={<Movies/>}/> 
+                <Route path="/bomboniere" />
+                <Route path="/unidades"/>          
+            </Routes>
+        </BrowserRouter>
+    </div>
   );
 }
 }
