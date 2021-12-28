@@ -1,0 +1,16 @@
+.headerMain {
+    background-color: var(--bg-color);
+    color: var(--black);
+    font-weight: bold;
+    font-size: 26px;
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 42%);
+}
+
+.headerMain ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+    height: 100%;
+}
