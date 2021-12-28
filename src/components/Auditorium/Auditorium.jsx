@@ -25,7 +25,6 @@ class Auditorium extends Component {
     componentDidUpdate() {
         console.log(this.state.room)
     }
-
     render() {
         return(
             <main className={style.totalContainer}>
@@ -78,5 +77,6 @@ class Auditorium extends Component {
     }
 
 }
+
 
 export default Auditorium;
