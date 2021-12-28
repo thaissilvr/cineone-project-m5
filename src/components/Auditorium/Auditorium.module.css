@@ -7,7 +7,8 @@
 
 .seatsContainer{ 
     display: grid;
-    grid-template-columns: repeat(5, 100px);
+    grid-template-columns: repeat(5, 40px);
+    gap: 5px;
 }
 
 .seatsContainer li {

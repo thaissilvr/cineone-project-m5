@@ -1,7 +1,31 @@
 import React, { Component } from "react";
-import style from './Seats.module.css'
+import style from './Auditorium.module.css'
 
-class Seats extends Component {
+class Auditorium extends Component {
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            room: []
+        }
+    }
+
+    async requestAPI() {
+        const api = await fetch (`https://cinema-aud-m4.herokuapp.com/auditorium`)
+        const jason = await api.json()
+        return jason
+    }
+    
+    async componentDidMount(){
+        this.setState({
+            room: await this.requestAPI()
+        })
+    }
+
+    componentDidUpdate() {
+        console.log(this.state.room)
+    }
+
     render() {
         return(
             <main className={style.totalContainer}>
@@ -55,4 +79,4 @@ class Seats extends Component {
 
 }
 
-export default Seats;
+export default Auditorium;
