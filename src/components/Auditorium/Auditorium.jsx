@@ -26,7 +26,6 @@ class Auditorium extends Component {
         console.log(this.state.room)
     }
 
-
     render() {
         return(
             <main>
