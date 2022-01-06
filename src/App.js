@@ -4,8 +4,7 @@ import Header from "./components/Header/Header"
 import Movies from "./components/Movies/Movies"
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-class App extends React.Component {
-  render() {
+function App () {
   return (
     <div> 
         <BrowserRouter>
@@ -20,6 +19,6 @@ class App extends React.Component {
     </div>
   );
 }
-}
+
 
 export default App;

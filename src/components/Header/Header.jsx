@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import style from "./Header.module.css"
 import { Link } from 'react-router-dom'
 
-class Header extends Component {
-    render () {
+function Header () {
+
         return (
             <header className={style.headerMain}>
                 <ul>
@@ -18,6 +18,6 @@ class Header extends Component {
 
         )
     }
-}
+
 
 export default Header;

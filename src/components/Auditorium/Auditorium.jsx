@@ -11,7 +11,7 @@ class Auditorium extends Component {
     }
 
     async requestAPI() {
-        const api = await fetch (`https://cinema-aud-m4.herokuapp.com/auditorium`)
+        const api = await fetch (`https://cineone-api.herokuapp.com/movie`)
         const json = await api.json()
         return json
     }
