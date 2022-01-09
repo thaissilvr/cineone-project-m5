@@ -1,0 +1,21 @@
+.container_1 {
+  background-color: white;
+}
+
+.div_title {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.container_2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+  margin-top: 8%;
+}
+
+.div_unidades {
+  width: 300px;
+  height: 250px;
+  background-color: aqua;
+}
