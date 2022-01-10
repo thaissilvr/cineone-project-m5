@@ -1,0 +1,41 @@
+.comingSoonMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.soon{
+    color: rgb(216, 216, 216);
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0.8em 0;
+    border-top: solid rgb(216, 216, 216);
+    border-bottom: solid rgb(216, 216, 216);
+    line-height: 3em;
+}
+
+.gridComingSoon{
+    display: grid;
+    text-align: center;
+    width: 87%;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.comingSoonFilm1{
+    grid-column: 1/2;
+}
+
+.comingSoonFilm2{
+    grid-column: 2/3;
+}
+
+.comingSoonFilm3{
+    grid-column: 3/4;
+}
+
+.comingSoonImg{
+    width: 90%;
+    height: 80%;
+    border-radius: 2em;
+}
