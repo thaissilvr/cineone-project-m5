@@ -1,8 +1,8 @@
 import React from 'react';
 import style from './ComingSoon.module.css';
-import kingsmanPoster from './kingsmanPoster.jpg';
-import panicoPoster from './panicoPoster.jpg'
-import morbiusPoster from './morbiusPoster.jpg'
+import kingsmanPoster from './images/kingsmanPoster.jpg';
+import panicoPoster from './images/panicoPoster.jpg'
+import morbiusPoster from './images/morbiusPoster.jpg'
 
 function ComingSoon () {
 

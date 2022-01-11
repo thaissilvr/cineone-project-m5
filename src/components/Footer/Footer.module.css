@@ -1,0 +1,36 @@
+.footerMain{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    height: 40%;
+    justify-items: center;
+}
+
+hr{
+    grid-column: 1/5;
+    width: 95%;
+    margin: 3em 0;
+}
+
+.footerFilms, .footerBomboniere, .footerAuditorium, .footerAbout{
+    display: flex;
+    flex-direction: column;
+    line-height: 3em;
+    align-items: flex-start;
+    color: rgb(216, 216, 216);
+}
+
+.footerFilms{
+    grid-column: 1/2;
+}
+
+.footerBomboniere{
+    grid-column: 2/3;
+}
+
+.footerAuditorium{
+    grid-column: 3/4;
+}
+
+.footerAbout{
+    grid-column: 4/5;
+}
