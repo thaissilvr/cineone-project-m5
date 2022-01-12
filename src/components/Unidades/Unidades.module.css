@@ -12,6 +12,7 @@
 .div_title {
   margin-top: 5%;
   text-align: center;
+  text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.26);
   color: wheat;
   font-size: 1.8rem;
   font-weight: bold;
@@ -23,7 +24,6 @@
 .container_2 {
   display: grid;
   grid-template-columns: auto auto auto;
-  /* grid-template-rows: auto auto; */
   justify-content: space-around;
   margin-top: 8%;
 }
@@ -35,6 +35,13 @@
   background-color: rgba(0, 0, 0, 0.2);
   border: 3px solid rgba(245, 245, 245, 0.041);
   border-radius: 30px;
+  cursor: pointer;
+}
+
+.div_unidades:hover{
+  transform: scale(1.1);
+  transition: 0.6s;
+  transition-delay: 8ms;
 }
 
 .img {
@@ -51,6 +58,7 @@
 
 .info{
   color: wheat;
+  text-shadow: 0.5em 0.3em 0.5em black;
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -60,6 +68,7 @@
 
 span{
   padding: 1.5%;
+  cursor: pointer;
 }
 
 .city_name{
