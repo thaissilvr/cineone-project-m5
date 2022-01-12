@@ -4,7 +4,7 @@ import Header from "./components/Header/Header"
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import MovieInfo from "./components/MovieInfo/MovieInfo";
 import MovieList from "./components/Movies/MovieList";
-
+import Unidades from "./components/Unidades/Unidades";
 function App () {
   return (
     <div> 
@@ -14,7 +14,7 @@ function App () {
                 <Route path="/" element={<h1>Página Inicial</h1>}/>
                 <Route path="/programacao" element={<MovieList/>}/> 
                 <Route path="/bomboniere" />
-                <Route path="/unidades"/> 
+                <Route path="/unidades" element={<Unidades/>}/> 
                 <Route path="/movie-info/:id_movie" element={<MovieInfo/>} />         
             </Routes>
         </BrowserRouter>
