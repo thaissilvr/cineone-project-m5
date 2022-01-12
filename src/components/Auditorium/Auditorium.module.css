@@ -1,25 +1,57 @@
+.mainHeader{
+ display: flex;
+ flex-direction: column;
+ 
+}
 .totalContainer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-content: center;
-    margin-top: 80px;
+    align-items: center;
+
+}
+
+.totalContainer h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.screen{
+    background-color: #fff;
+    height: 30px;
+    width: 250px;
+    margin: 15px;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255,255,255,0.7);
+}
+
+.screen p {
+    color: rgb(0, 0, 0);
+
 }
 
 .seatsContainer{ 
     display: grid;
     grid-template-columns: repeat(5, 40px);
     gap: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: 20px;
 }
 
 .seatsContainer li {
-    list-style:none;
-    width:20px;
-    line-height: 20px;
-    border-radius: 20%;
-    text-align: center;
-    font-size: 10px;
-    border: 2px solid rgb(214, 15, 15);
-    padding:0%;
+    background-color:#32d312;
+    height:12px;
+    width: 15px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    list-style: none;
+}
+
+.seatsContainer li:hover {
+    background-color: chocolate;
+    border: 2px solid black;
 }
 
 .statusContainer {
@@ -42,24 +74,61 @@
 
 .statusContainer li {
     list-style: none;
+    
 }
 
 .statusContainer li::before {
     display: inline-block;
     content: "";
-    line-height: 10px;
-    border-radius: 10px;
-    width: 10px;
-    height: 10px;
-    margin-right: 5px;
+    height:12px;
+    width: 15px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-.disponivel::before {
-    background-color: gray;
+
+
+.available::before {
+    background-color: #32d312;
+    
 }
-.reservado::before {
+.occupied::before {
     background-color: red;
 }
-.selecionado::before{
-    background-color: green;
+.selected::before{
+    background-color: rgb(218, 130, 16);
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+     margin-top: 60px;
+    padding: 5px;
+}
+
+.infoContainer > h2, p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.inputBox {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 25px;
+    width: 300px;
+}
+
+.button {
+    background-color: rgb(0, 0, 0);
+    color: rgb(236, 236, 236);
+    font-weight: bold;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.button:hover{
+    font-style: italic;
 }
