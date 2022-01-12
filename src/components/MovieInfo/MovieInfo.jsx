@@ -7,6 +7,7 @@ import {Link} from "react-router-dom";
 
 
 
+
 function MovieInfo () {
    const [movieInfo, setMovieInfo] = useState([])
    const {id_movie} = useParams();
@@ -39,9 +40,9 @@ function MovieInfo () {
     const movieRooms = rooms.filter(room => room.id_movie === movie.id_movie);
     const time = movieRooms.map(room => {
             return (
-                    <ul className={style.escolheSessao}>
+                    <ul >
                     <Link to={`/assentos`}>
-                        <li><button>{room.time}</button> </li>  
+                        <li><button className={style.escolheSessao}>{room.time}</button> </li>  
                     </Link>
                     </ul>
             )
@@ -49,15 +50,19 @@ function MovieInfo () {
     )
 
     return (
-        <main>
-            <img src= {`${movie.urlImg}`} alt="Imagem do filme"></img>
+        <main className={style.infoContainer}>
+            
+            <div><img src= {`${movie.urlImg}`} alt="Imagem do filme"></img></div>
+            
+            <div>
             <h2>{`${movie.name}`}</h2>
             <p>Gênero: {`${movie.genre}`}</p>
             <p>Classificação: {`${movie.rating}`}</p>
             <p>Duração: {`${movie.movie_length}`}</p>
             <p>Sinopse: {`${movie.synopsis}`}</p>
-            <p>Horário: {time}</p>
+            </div>
 
+            <div><p>Horário: {time}</p></div>
         </main>
  )
 

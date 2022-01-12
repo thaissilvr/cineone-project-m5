@@ -1,0 +1,29 @@
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 30px;
+    color: white;
+
+}
+
+
+.info li {
+   list-style: none;
+}
+
+
+.escolheSessao {
+    background-color: rgb(170, 72, 72);
+    color: white;
+    font-size: large;
+    border: 1px solid black;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.escolheSessao:hover{
+    transform: scale(1.2); 
+    box-shadow: 0 5px 10px rgba(0,0,0,0.6);
+}
