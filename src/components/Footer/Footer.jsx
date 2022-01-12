@@ -1,5 +1,9 @@
 import React from "react";
 import style from "./Footer.module.css"
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import { Link } from 'react-router-dom'
 
 function Footer () {
@@ -33,6 +37,13 @@ function Footer () {
                     <li className={style.footerItems}>Contato</li>
                 </div>
                 <hr />
+
+                <div className={style.footerIcons}>
+                    <li className={style.footerItems}><FaFacebook /></li>
+                    <li className={style.footerItems}><FaInstagram /></li>
+                    <li className={style.footerItems}><FaTwitter /></li>
+                    <li className={style.footerItems}><FaLinkedin /></li>
+                </div>
             </footer>
 
         )

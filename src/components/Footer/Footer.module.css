@@ -34,3 +34,15 @@ hr{
 .footerAbout{
     grid-column: 4/5;
 }
+
+.footerIcons{
+    display: flex;
+    grid-column: 2/4;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-direction: row;
+    list-style: none;
+    font-size: 1.2em;
+    color: rgb(216, 216, 216);
+    padding-bottom: 2em;
+}
