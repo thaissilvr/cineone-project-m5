@@ -9,10 +9,12 @@
     color: rgb(216, 216, 216);
     font-family: sans-serif;
     text-align: center;
+    width: 20%;
     margin: 0.8em 0;
-    border-top: solid rgb(216, 216, 216);
-    border-bottom: solid rgb(216, 216, 216);
+    border-top: dotted 0.2em rgb(216, 216, 216);
+    border-bottom: dotted 0.2em rgb(216, 216, 216);
     line-height: 3em;
+    animation: animate 2s infinite;
 }
 
 .gridComingSoon{
@@ -20,6 +22,8 @@
     text-align: center;
     width: 87%;
     grid-template-columns: 33.33% 33.33% 33.33%;
+    margin-top: 2em;
+    line-height: 6.5em;
 }
 
 .comingSoonFilm1{
@@ -39,4 +43,17 @@
     height: 90%;
     border-radius: 2em;
     cursor: pointer;
+    transition: all 1s;
+}
+
+.comingSoonImg:hover{
+    transform: scale(1.1);
+}
+
+@keyframes animate{
+    from {border-top: dotted 0.2em rgb(216, 216, 216);}
+    to {border-top: dotted 0.2em rgb(187, 187, 62);}
+
+    from {border-bottom: dotted 0.2em rgb(216, 216, 216);}
+    to {border-bottom: dotted 0.2em rgb(187, 187, 62);}
 }

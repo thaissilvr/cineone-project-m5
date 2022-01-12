@@ -3,6 +3,7 @@
     color: var(--black);
     font-weight: bold;
     font-size: 20px;
+    height: 20vh;
     box-shadow: 5px 5px 10px rgb(0 0 0 / 42%);
 }
 
@@ -21,4 +22,9 @@
 
 .nav{
     color: rgb(216, 216, 216);
+    transition: all 0.6s;
+}
+
+.nav:hover{
+    transform: scale(1.2);
 }
