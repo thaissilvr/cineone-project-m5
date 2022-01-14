@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    max-width: 83vw;
+}
+.container .box .carousel{
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+.container .box .carousel::-webkit-scrollbar{
+    display:none;
+}    
+.container .carousel .item{
+    background-color: rgb(235, 235, 235);
+    margin: 10px;
+    padding: 10px;
+    width: 280px;
+    border-radius: 5px;
+}
+.container .title{
+    margin-top: 30px;
+}
+.setas{
+    width: 50px;
+}
+.container .carousel .item .info{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container .carousel .item .info span{
+    display: block;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+.container .carousel .item .info .name{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: black;
+}
+.container .carousel .item .info .price{
+    margin-top: 8px;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: rgb(119, 0, 0);
+    cursor: pointer;
+}
+.container .button1 button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.container .button2 button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

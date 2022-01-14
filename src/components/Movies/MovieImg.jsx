@@ -1,5 +1,5 @@
 //função que trabalha com a requisição da imagem
-function MovieImg(props) {
+/*function MovieImg(props) {
     return(
       <div id_movie={props.id_movie}>
         <div>
@@ -9,4 +9,4 @@ function MovieImg(props) {
     );
 }
 
-export default MovieImg;
+export default MovieImg; */

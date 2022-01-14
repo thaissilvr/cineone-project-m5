@@ -11,7 +11,7 @@ function Header () {
                         <h1>CINEONE</h1>
                     </Link>
                     <Link to="/programacao">Programação</Link>
-                    <Link to="">Bomboniere</Link>
+                    <Link to="/bomboniere">Bomboniere</Link>
                     <Link to="">Nossas Unidades</Link>
                 </ul>
             </header>
