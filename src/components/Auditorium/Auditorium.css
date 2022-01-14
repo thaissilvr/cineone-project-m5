@@ -1,6 +1,7 @@
-.mainHeader{
+/* .mainHeader{
  display: flex;
  flex-direction: column;
+ color: white;
  
 }
 .totalContainer {
@@ -87,7 +88,9 @@
     border-top-right-radius: 10px;
 }
 
-
+.seatOccupied {
+    background-color: red;
+}
 
 .available::before {
     background-color: #32d312;
@@ -131,4 +134,26 @@
 
 .button:hover{
     font-style: italic;
-}
+} */
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .assentos > input {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: green;
+    border-radius: 8px;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
