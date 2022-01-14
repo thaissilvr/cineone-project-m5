@@ -1,6 +1,11 @@
 import React from "react"
 import './App.css';
-import Header from "./components/Header/Header"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Header from "./components/Header/Header";
+// import Movies from "./components/Movies/Movies";
+import Home from "./components/Home/Home";
+import Footer from "./components/Footer/Footer";
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import MovieInfo from "./components/MovieInfo/MovieInfo";
 import MovieList from "./components/Movies/MovieList";
@@ -13,7 +18,7 @@ function App () {
         <BrowserRouter>
             <Header/>
             <Routes>
-                <Route path="/" element={<h1>Página Inicial</h1>}/>
+                <Route path="/" element={<Home/>}/>
                 <Route path="/programacao" element={<MovieList/>}/> 
                 <Route path="/bomboniere" />
                 <Route path="/informacoes/:id_movie" element={<MovieInfo/>} /> 
@@ -21,6 +26,7 @@ function App () {
                 <Route path="/unidades" element={<Unidades/>}/> 
 
             </Routes>
+            <Footer/>
         </BrowserRouter>
     </div>
   );

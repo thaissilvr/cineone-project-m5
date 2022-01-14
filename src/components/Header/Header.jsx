@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./Header.module.css"
+import film from "./logo.PNG"
 import { Link } from 'react-router-dom'
 
 function Header () {
@@ -8,11 +9,12 @@ function Header () {
             <header className={style.headerMain}>
                 <ul>
                     <Link to="">
-                        <h1>CINEONE</h1>
+                        <img className={style.img} src={film} alt="" />
                     </Link>
-                    <Link to="/programacao">Programação</Link>
-                    <Link to="">Bomboniere</Link>
-                    <Link to="/unidades">Nossas Unidades</Link>
+                    <Link to="" className={style.nav}>Home</Link>
+                    <Link to="/programacao" className={style.nav}>Programação</Link>
+                    <Link to="/bomboniere" className={style.nav}>Bomboniere</Link>
+                    <Link to="/unidades" className={style.nav}>Nossas Unidades</Link>
                 </ul>
             </header>
 

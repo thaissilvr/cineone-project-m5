@@ -52,17 +52,18 @@ function MovieInfo () {
     return (
         <main className={style.infoContainer}>
             
-            <div><img src= {`${movie.urlImg}`} alt="Imagem do filme"></img></div>
+            <div><img className={style.imgMovie} src= {`${movie.urlImg}`} alt="Imagem do filme"></img></div>
             
             <div>
-            <h2>{`${movie.name}`}</h2>
-            <p>Gênero: {`${movie.genre}`}</p>
-            <p>Classificação: {`${movie.rating}`}</p>
-            <p>Duração: {`${movie.movie_length}`}</p>
-            <p>Sinopse: {`${movie.synopsis}`}</p>
+            <h2 className={style.titleMovie}>{`${movie.name}`}</h2>
+            <p className={style.pMovie}>Gênero: {`${movie.genre}`}</p>
+            <p className={style.pRatingMovie}>Classificação: {`${movie.rating}`}</p>
+            <p className={style.pTimeMovie}>Duração: {`${movie.movie_length}`}</p>
+            <p className={style.pSynopsisMovie}>Sinopse: {`${movie.synopsis}`}</p>
             </div>
 
-            <div><p>Horário: {time}</p></div>
+            <div><p className={style.movieTime}>Horário: </p>
+            <p className={style.movieTime}>{time}</p></div>
         </main>
  )
 
