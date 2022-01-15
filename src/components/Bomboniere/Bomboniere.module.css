@@ -15,7 +15,7 @@
     justify-content: center;
     align-items: center;
     margin: 30px;
-    max-width: 83vw;
+    max-width: 65vw;
 }
 .container .box .carousel{
     display: flex;
@@ -35,9 +35,6 @@
 .container .title{
     margin-top: 30px;
 }
-.setas{
-    width: 50px;
-}
 .container .carousel .item .info{
     height: 100px;
     display: flex;
@@ -52,15 +49,15 @@
     border-radius: 10px;
 }
 .container .carousel .item .info .name{
-    font-size: 1.2rem;
+    font-size: 14px;
     font-weight: bold;
     margin: 10px 0;
     color: black;
 }
 .container .carousel .item .info .price{
-    margin-top: 8px;
-    margin-bottom: 12px;
-    font-size: 1.2rem;
+    margin-top: 1px;
+    margin-bottom: 9px;
+    font-size: 14px;
     font-weight: bold;
     background-color: rgb(119, 0, 0);
     cursor: pointer;
@@ -74,4 +71,12 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+}
+.fotos{
+    width: 150px;
+    cursor: pointer;
+}
+h1{
+    font-size: 25px;
+    color: rgb(235, 235, 235);
 }
