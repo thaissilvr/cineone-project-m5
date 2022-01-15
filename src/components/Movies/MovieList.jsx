@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Axios from "axios";
 import style  from "./Movies.module.css";
-import { useState } from "react/cjs/react.development";
 import {Link} from "react-router-dom";
 import MovieImg from "./MovieImg";
 
