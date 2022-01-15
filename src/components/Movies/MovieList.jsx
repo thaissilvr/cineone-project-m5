@@ -4,7 +4,6 @@ import style  from "./Movies.module.css";
 import { useState } from "react/cjs/react.development";
 import {Link} from "react-router-dom";
 import MovieImg from "./MovieImg";
-import MovieInfo from "../MovieInfo/MovieInfo";
 
 
 
@@ -24,7 +23,7 @@ function MovieList () {
     
     const movieDisplay =  movies.map((movie) => {
         return (
-            <Link key={movie.id_movie} to={`/movie-info/${movie.id_movie}`} element={<MovieInfo/>}>
+            <Link key={movie.id_movie} to={`/informacoes/${movie.id_movie}`}>
                 <MovieImg id_movie={movie.id_movie} urlImg={movie.urlImg} />
             </Link>
         )   
