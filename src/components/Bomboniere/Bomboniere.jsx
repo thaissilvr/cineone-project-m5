@@ -1,5 +1,5 @@
 import style from "./Bomboniere.module.css"
-import {useRef} from 'react'
+import React, {useRef} from 'react'
 
 function Bomboniere(){
     const carousel1 = useRef(null)
