@@ -6,7 +6,7 @@ function MovieImg(props) {
     return(
       <div id_movie={props.id_movie}>
         <div className={style.imgPoster}>
-          <img alt="filme.jpg" src={props.urlImg}/>
+          <img className={style.imagem} alt="filme.jpg" src={props.urlImg}/>
         </div>
       </div>
     );
